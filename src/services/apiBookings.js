@@ -1,7 +1,6 @@
 import { PAGE_SIZE } from '../utils/constants'
 import { getToday } from '../utils/helpers'
 import supabase from './supabase'
-
 export async function getBookings({ filter, sortBy, page }) {
     let query = supabase.from('bookings').select(
         `id, created_at, startDate, endDate, numNights, numGuests, status, totalPrice,    cabins!bookings_cabinId_fkey(name), 

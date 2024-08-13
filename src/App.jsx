@@ -31,7 +31,7 @@ function App() {
             <QueryClientProvider client={queryClient}>
                 <ReactQueryDevtools initialIsOpen={false} />
                 <GlobalStyles />
-                <BrowserRouter basename="/the-wild-oasis">
+                <BrowserRouter>
                     <Routes>
                         <Route
                             element={

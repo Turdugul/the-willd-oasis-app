@@ -10,5 +10,4 @@ export default defineConfig({
             overlay: false,
         },
     },
-    base: '/the-wild-oasis/',
 })
